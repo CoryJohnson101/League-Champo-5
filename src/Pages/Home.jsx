@@ -97,7 +97,7 @@ const Sendit = styled.button`
     font-size: larger;
     border-radius: 30%;
     border: 2px solid black;
-    box-shadow: 0 9px #404040;
+    box-shadow: 0 4px #404040;
     margin-top: 20px;
     margin-left: 35px;
 
@@ -105,7 +105,7 @@ const Sendit = styled.button`
 
     &:active {
         background-color: #7a7a9f;
-        box-shadow: 0 5px #404040;
+        box-shadow: 0 0px #404040;
         transform: translateY(4px);
     }
 `
