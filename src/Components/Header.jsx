@@ -31,8 +31,8 @@ const Title2 = styled.p`
 const Header = props => {
   return (
     <Head>
-      <Title>League Champo 5</Title>
-      <Title2>League of Legends Custom Game Toolbox</Title2>
+      <Title>{props.Title}</Title>
+      <Title2>{props.SubHead}</Title2>
     </Head>
   )
 }

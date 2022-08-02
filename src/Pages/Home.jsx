@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Header } from '../Components'
+import { Header, TeamInput, Selections, Button } from '../Components'
 
 const Body = styled.div`
   background-color: #d9d9d9;
@@ -11,18 +11,7 @@ const Inputdiv = styled.div`
   justify-content: center;
   align-items: center;
 `
-const TeamInput = styled.textarea`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  font-size: large;
-  color: #404040;
-  width: 895px;
-  height: 76px;
-  margin-top: 76px;
-  margin-bottom: 50px;
-  resize: none;
-  border: 1px solid #a6a6a6;
-`
+
 const Bot = styled.div`
   display: flex;
   justify-content: center;
@@ -30,115 +19,27 @@ const Bot = styled.div`
 const Left = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-`
-const Title3 = styled.h3`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  text-align: start;
-  margin-left: 65px;
-`
-const Title4 = styled.h3`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  text-align: start;
-  margin-left: 60px;
-`
-const Boxes = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px;
-  margin-bottom: 30px;
-`
-const AHH = styled.div`
-  display: flex;
-`
-const Check = styled.input`
-  width: 25px;
-  height: 25px;
-  margin-left: 40px;
+  align-items: center;
 `
 
-const Boxes2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-`
-const Label = styled.label`
-  margin-left: 25px;
-`
 
-const Sendit = styled.button`
-  width: 139px;
-  height: 86px;
-  background-color: #9f9fba;
-  color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  font-size: larger;
-  border-radius: 30%;
-  border: 2px solid black;
-  box-shadow: 0 4px #404040;
-  margin-top: 20px;
-  margin-left: 35px;
 
-  &:hover {
-    background-color: #7a7a9f;
-  }
 
-  &:active {
-    background-color: #7a7a9f;
-    box-shadow: 0 0px #404040;
-    transform: translateY(4px);
-  }
-`
+
 
 const Home = () => {
   return (
     <Body>
-      <Header />
+      <Header Title='League Champo 5' SubHead='League of Legends Custom Game Toolbox' />
       <Inputdiv>
-        <TeamInput
-          type='text'
-          placeholder='Player names here, seperate with commas'
-        ></TeamInput>
+        <TeamInput />
       </Inputdiv>
       <Bot>
         <Left>
-          <Title3>Map Select</Title3>
-          <AHH>
-            <Boxes>
-              <Check type='checkbox' className='HA'></Check>
-              <label htmlFor='HA'>Howling Abyss</label>
-            </Boxes>
-            <Boxes>
-              <Check type='checkbox' className='SR'></Check>
-              <label htmlFor='SR'>Summoners Rift</label>
-            </Boxes>
-          </AHH>
-          <Title3>Role Select</Title3>
-          <AHH>
-            <Boxes>
-              <Check type='checkbox' className='RanRole'></Check>
-              <label htmlFor='RanRole'>Random Roles</label>
-            </Boxes>
-            <Boxes>
-              <Check type='checkbox' className='ManRole'></Check>
-              <label htmlFor='ManRole'>Manual Roles</label>
-            </Boxes>
-          </AHH>
-          <Title4>Team Select</Title4>
-          <AHH>
-            <Boxes2>
-              <Check type='checkbox' className='Rand'></Check>
-              <Label htmlFor='Rand'>Random</Label>
-            </Boxes2>
-            <Boxes2>
-              <Check type='checkbox' className='Man'></Check>
-              <Label htmlFor='Man'>Manual</Label>
-            </Boxes2>
-          </AHH>
-          <Sendit type='submit'>Send it</Sendit>
+          <Selections Title="Map Select" One="Howling Abyss" Two="Summoners Rift" />
+          <Selections Title="Role Select" One="Random Roles" Two="Manual Roles" />
+          <Selections Title="Team Select" One="Random Teams" Two="Manual Teams" />
+          <Button text="Send it" height="86px" width="139px"></Button>
         </Left>
       </Bot>
     </Body>

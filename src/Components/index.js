@@ -1,2 +1,5 @@
 export { default as PlayerCard } from './PlayerCard'
 export { default as Header } from './Header'
+export { default as TeamInput } from './HomePage/TeamInput'
+export { default as Selections } from './HomePage/Selections'
+export { default as Button } from './Button'
