@@ -27,7 +27,7 @@ const Left = styled.div`
 
 
 
-const Home = () => {
+const Home = (players, map, roles, teams) => {
   return (
     <Body>
       <Header Title='League Champo 5' SubHead='League of Legends Custom Game Toolbox' />

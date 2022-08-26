@@ -25,7 +25,7 @@ const Title2 = styled.p`
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  top: 10%;
+  top: 7vw;
 `
 
 const Header = props => {
