@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import { Header, TeamInput, Selections, Button } from '../Components'
+import styled from "styled-components"
+import React from "react"
+import { Header, TeamInput, Selections, Button } from "../Components"
 
 const Body = styled.div`
   background-color: #d9d9d9;
@@ -22,24 +23,34 @@ const Left = styled.div`
   align-items: center;
 `
 
-
-
-
-
-
 const Home = (players, map, roles, teams) => {
   return (
     <Body>
-      <Header Title='League Champo 5' SubHead='League of Legends Custom Game Toolbox' />
+      <Header
+        Title='League Champo 5'
+        SubHead='League of Legends Custom Game Toolbox'
+      />
       <Inputdiv>
         <TeamInput />
       </Inputdiv>
       <Bot>
         <Left>
-          <Selections Title="Map Select" One="Howling Abyss" Two="Summoners Rift" />
-          <Selections Title="Role Select" One="Random Roles" Two="Manual Roles" />
-          <Selections Title="Team Select" One="Random Teams" Two="Manual Teams" />
-          <Button text="Send it" height="86px" width="139px"></Button>
+          <Selections
+            Title='Map Select'
+            One='Howling Abyss'
+            Two='Summoners Rift'
+          />
+          <Selections
+            Title='Role Select'
+            One='Random Roles'
+            Two='Manual Roles'
+          />
+          <Selections
+            Title='Team Select'
+            One='Random Teams'
+            Two='Manual Teams'
+          />
+          <Button text='Send it' height='86px' width='139px'></Button>
         </Left>
       </Bot>
     </Body>

@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components"
+import React from "react"
 
 const Head = styled.div`
   display: flex;
@@ -14,8 +15,8 @@ const Title = styled.h1`
   position: absolute;
   color: #ffd700;
   font-size: 60px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   top: 0px;
 `
 
@@ -23,8 +24,8 @@ const Title2 = styled.p`
   position: absolute;
   color: #ffd700;
   font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   top: 7vw;
 `
 

@@ -1,8 +1,9 @@
 import styled from "styled-components"
-
+import React from "react"
 
 const Input = styled.textarea`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: large;
   color: #404040;
   width: 895px;
@@ -14,9 +15,9 @@ const Input = styled.textarea`
 `
 
 const TeamInput = () => {
-    return (
-        <Input type="text" placeholder="Player names here, seperate with commas" />
-    )
+  return (
+    <Input type='text' placeholder='Player names here, seperate with commas' />
+  )
 }
 
 export default TeamInput
